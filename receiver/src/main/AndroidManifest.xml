@@ -9,22 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <meta-data
-            android:name="aia-compat-api-min-version"
-            android:value="1" />
 
-        <activity android:name=".MainActivity">
-            <intent-filter android:order="1">
-                <action android:name="android.intent.action.VIEW" />
+        <activity android:name="com.example.receiver.MyActivity">
 
-                <category android:name="android.intent.category.BROWSABLE" />
-                <category android:name="android.intent.category.DEFAULT" />
-
-                <data
-                    android:host="example.com"
-                    android:pathPattern="/.*"
-                    android:scheme="https" />
-            </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
